@@ -1,0 +1,71 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "expectation-hr-dataset",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "Age",
+        "max_value": 60,
+        "min_value": 18
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "Attrition",
+        "value_set": [
+          "Yes",
+          "No"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "MonthlyIncome",
+        "type_list": [
+          "int64",
+          "float64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "JobRole"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_most_common_value_to_be_in_set",
+      "kwargs": {
+        "column": "Gender",
+        "value_set": [
+          "Male",
+          "Female"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_distinct_values_to_be_in_set",
+      "kwargs": {
+        "column": "Department",
+        "value_set": [
+          "Sales",
+          "Research & Development",
+          "Human Resources"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.19"
+  }
+}
